@@ -110,29 +110,6 @@
 var headers = new Headers();
 
     $(document).ready(function() {
-        var requestOptions = { method: 'GET',
-               headers: headers,
-               mode: 'cors',
-               cache: 'default' };
-
-fetch('3dmodle/sheep_vase4.obj',requestOptions)
-.then(function(response) {
-  return response.blob();
-})
-.then(function(myBlob) {
-  var objectURL = URL.createObjectURL(myBlob);
-  $('#sheet').attr('src',objectURL);
-});
-
-
-fetch('3dmodle/sheep_vase4.mtl',requestOptions)
-.then(function(response) {
-  return response.blob();
-})
-.then(function(myBlob) {
-  var objectURL2 = URL.createObjectURL(myBlob);
-  $('#sheet').attr('mtl',objectURL2);
-});
 
         var config = {
             scaleFlag: 0,
