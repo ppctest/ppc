@@ -197,8 +197,8 @@ var headers = new Headers();
             <img id="img2" class="gallery" src="img/thumb/01P03c.jpg" index="2" current="false">
             <img id="img3" class="gallery" src="img/thumb/01P01.jpg" index="3" current="false">
             <img id="img4" class="gallery" src="img/thumb/01P02.png" index="4" current="false">
-             <a-asset-item id="crate-obj" src="3dmodle/sheep_vase4.obj"></a-asset-item>
-            <a-asset-item id="crate-mtl" src="3dmodle/sheep_vase4.mtl"></a-asset-item>
+             <a-asset-item id="crate-obj" src="3dmodle/T-Rex/T-Rex.obj"></a-asset-item>
+            <a-asset-item id="crate-mtl" src="3dmodle/T-Rex/T-Rex.mtl"></a-asset-item>
         </a-assets>
         <a-marker markerhandler2 id="video-marker"  type='pattern' url='pat/ar.pat' emitevents="true">
             <a-video event-set__down="_event: click;_func:playVideo('#video')" id="videoScreen" src="#video" width="2.5" height="2" rotation="0  0 0" position="0 1 0"></a-video>
@@ -232,7 +232,7 @@ var headers = new Headers();
         </a-marker>
         <a-marker type='pattern' markerhandler emitevents="true"  url='pat/ppc.pat' id="animated-marker">
         <!--a-obj-model id="sheet" src="" mtl="" position="0 4 0" rotation=0 0 0" scale="0.2 0.2 0.2"></a-obj-model-->
-            <a-entity obj-model="obj: url(3dmodle/T-Rex/T-Rex Model.obj); mtl: url(3dmodle/T-Rex/T-Rex Model.mtl)" position="0 0 0" rotation=0 0 0" scale="1 1 01"></a-entity>
+            <a-entity obj-model="obj: url(3dmodle/T-Rex/T-Rex.obj); mtl: url(3dmodle/T-Rex/T-Rex.mtl)" position="0 0 0" rotation=0 0 0" scale="1 1 1"></a-entity>
             <a-animation attribute="rotation" begin="click" dur="100" to="0 360 0"></a-animation>
         </a-marker>
         <!-- add a simple camera -->
